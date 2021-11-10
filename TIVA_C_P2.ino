@@ -122,3 +122,6 @@ void setup() {
   FillRect(4, 21, 20, 4, 0xFFFF);
   FillRect(0, 140, 340, 1, 0xFFFF);
   
+  String text1 = "Chiquimula, Guatemala";
+  LCD_Print(text1, 120, 50, 1, 0xFFFF, 0x765E);
+
