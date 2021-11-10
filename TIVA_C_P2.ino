@@ -164,3 +164,9 @@ void setup() {
     Serial.println("initialization failed!");
     return;
   }
+  
+  pinMode(PA_3, OUTPUT);
+  pinMode(b1, INPUT_PULLUP);
+  pinMode(b2, INPUT_PULLUP);
+
+}
