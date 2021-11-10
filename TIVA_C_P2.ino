@@ -244,3 +244,34 @@ void EscribirSD (void) {
     }
   }
 
+//***************************************************************************************************************************************
+// Función Sonido B1
+//***************************************************************************************************************************************
+
+void SonidoB1 (void){
+  for (int thisNote1 = 0; thisNote1 < 2; thisNote1++) {
+    int noteDuration1 = 1000/DuracionS1[thisNote1];
+    tone(buzzerPin, SB1[thisNote1],noteDuration1);
+
+    int pauseBetweenNotes1 = noteDuration1 + 50;      //delay between pulse
+    delay(pauseBetweenNotes1);
+    
+    noTone(buzzerPin);                // stop the tone playing
+  }
+}
+
+//***************************************************************************************************************************************
+// Función Sonido B2
+//***************************************************************************************************************************************
+void SonidoB2 (void){
+  for (int thisNote2 = 0; thisNote2 < 2; thisNote2++) {
+    int noteDuration2 = 1000/DuracionS2[thisNote2];
+    tone(buzzerPin, SB2[thisNote2],noteDuration2);
+
+    int pauseBetweenNotes2 = noteDuration2 + 50;      //delay between pulse
+    delay(pauseBetweenNotes2);
+    
+    noTone(buzzerPin);                // stop the tone playing
+  }
+}
+
