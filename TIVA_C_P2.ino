@@ -223,3 +223,24 @@ void RecibirDatoyEnviar(void){
 
 }
 
+//**************************************************************************************************************************************
+// Funcion para guardar valor de temperatura en SD al presionar b2
+//**************************************************************************************************************************************
+
+void EscribirSD (void) {
+  
+  archivo = SD.open("Data.csv", FILE_WRITE);
+
+  if (archivo){
+    Serial.print("Se guardó en la SD el valor de Temperatura: ");
+    Serial.println(sensorT);
+    archivo.println(sensorT);
+    archivo.close();
+    
+    }
+
+  else{
+    Serial.println("Error al abrir Data.csv");
+    }
+  }
+
