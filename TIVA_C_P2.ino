@@ -204,3 +204,22 @@ void sensor(void) // Valor de temperatura
   }
 }
 
+//**************************************************************************************************************************************
+// Funcion para  imprimir en monitor serial de ESP32 el valor de temperatura cuando se presione B1
+//**************************************************************************************************************************************
+void RecibirDatoyEnviar(void){
+
+  if(digitalRead (b1) == 0){
+    delay(200);
+    SonidoB1();
+    estadob1 = 1;
+    Serial2.println(estadob1);
+    }
+
+  else{
+    estadob1 = 0;
+    Serial2.println(estadob1);
+    }
+
+}
+
