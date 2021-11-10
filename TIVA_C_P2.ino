@@ -77,3 +77,11 @@ void RecibirDatoyEnviar(void); // Funcion para recibir valor del ESP32 al pulsar
 void EscribirSD (void);
 void SonidoB1 (void);
 void SonidoB2 (void);
+
+extern uint8_t fondo[];
+extern uint8_t clima[];
+extern uint8_t lluvia[];
+extern uint8_t SignoCelsius[];
+extern uint8_t sollluvia[];
+extern uint8_t solnubeviento[];
+
