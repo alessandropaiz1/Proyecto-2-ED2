@@ -116,3 +116,9 @@ void setup() {
   Serial.println("Inicio");
   LCD_Init();
   LCD_Clear(0xFFFF);
+  FillRect(0, 0, 320, 240, 0x765E);
+  FillRect(4, 5, 20, 4, 0xFFFF);
+  FillRect(4, 13, 20, 4, 0xFFFF);
+  FillRect(4, 21, 20, 4, 0xFFFF);
+  FillRect(0, 140, 340, 1, 0xFFFF);
+  
