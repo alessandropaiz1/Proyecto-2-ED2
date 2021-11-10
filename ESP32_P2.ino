@@ -66,3 +66,20 @@ void EMAADC(void)
   Serial.println(celsius);
 }
 
+void RecibirValor(void)
+{
+
+  if (Serial2.available() > 0)
+  {
+    sensorb1 = Serial2.readStringUntil('\n');
+  }
+
+  estadob1 = sensorb1.toInt();
+
+  if ((estadob1) == 1)
+  {
+    EMAADC();
+    estadob1 = 0;
+    delay(200);
+  }
+}
