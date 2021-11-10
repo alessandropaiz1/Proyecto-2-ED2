@@ -22,3 +22,12 @@
 void EMAADC(void);
 void RecibirValor(void);
 
+//****************************************
+// Variables Globales
+//****************************************
+// Variables ADC
+int adcRaw = 0;
+double adcFiltradoT = 0;
+double alpha = 0.09;
+float celsius = 0.0;
+
