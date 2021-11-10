@@ -70,3 +70,10 @@ void LCD_Print(String text, int x, int y, int fontSize, int color, int backgroun
 
 void LCD_Bitmap(unsigned int x, unsigned int y, unsigned int width, unsigned int height, unsigned char bitmap[]);
 void LCD_Sprite(int x, int y, int width, int height, unsigned char bitmap[], int columns, int index, char flip, char offset);
+
+void sensor(void); // Función recibir valor del otro microcontrolador si existe
+void UART(void);    //Función de comunicación USART con computadora
+void RecibirDatoyEnviar(void); // Funcion para recibir valor del ESP32 al pulsar boton
+void EscribirSD (void);
+void SonidoB1 (void);
+void SonidoB2 (void);
