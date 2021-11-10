@@ -125,3 +125,36 @@ void setup() {
   String text1 = "Chiquimula, Guatemala";
   LCD_Print(text1, 120, 50, 1, 0xFFFF, 0x765E);
 
+//  String text2 = "27.5"; 
+  
+  LCD_Bitmap(40, 65, 64, 64, clima);
+  
+  LCD_Bitmap(30, 150, 32, 32, lluvia);
+
+  String Lunes = "Lun";
+  LCD_Print(Lunes, 33, 190, 1, 0xFFFF, 0x765E);
+  
+  LCD_Bitmap(90, 145, 32, 32, sollluvia);
+
+  String Martes = "Mar";
+  LCD_Print(Martes, 96, 190, 1, 0xFFFF, 0x765E);
+
+  
+  LCD_Bitmap(155, 145, 32, 32, solnubeviento);
+
+  String Miercoles = "Mie";
+  LCD_Print(Miercoles, 155, 190, 1, 0xFFFF, 0x765E);
+  
+  LCD_Bitmap(210, 145, 32, 32, sollluvia);
+
+  String Jueves = "Jue";
+  LCD_Print(Jueves, 215, 190, 1, 0xFFFF, 0x765E);
+  
+  LCD_Bitmap(270, 150, 32, 32, lluvia);
+
+  String Viernes = "Vie";
+  LCD_Print(Viernes, 275, 190, 1, 0xFFFF, 0x765E);
+
+  String Indicador = "Parcialmente nublado";
+  LCD_Print(Indicador, 120, 120, 1, 0xFFFF, 0x765E);
+
