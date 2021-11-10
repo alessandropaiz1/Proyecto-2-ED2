@@ -35,3 +35,6 @@ File archivo;
 #include "bitmaps.h"
 #include "font.h"
 #include "lcd_registers.h"
+#include "pitches.h"
+
+
