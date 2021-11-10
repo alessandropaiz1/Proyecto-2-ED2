@@ -177,3 +177,13 @@ void loop() {
   RecibirDatoyEnviar();
   sensor();
 
+  int readSD = digitalRead(b2);
+  if (!readSD) {
+    delay(150);
+    EscribirSD();
+    readSD = 1;
+    SonidoB2();
+    
+    }
+}
+
