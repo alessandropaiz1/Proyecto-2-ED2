@@ -187,3 +187,20 @@ void loop() {
     }
 }
 
+//**************************************************************************************************************************************
+// Funcion para recibir valor de temperatura
+//**************************************************************************************************************************************
+void sensor(void) // Valor de temperatura
+{
+  if (Serial2.available() > 0) // Verifica si hay algo escrito 
+  {
+    sensorT = Serial2.readStringUntil('\n'); // Obtener valor enviado del ESP32
+    LCD_Print(sensorT, 150, 85, 2, 0xFFFF, 0x765E);
+    FillRect(230, 85, 17, 20, 0x765E);
+    String text3 = "C"; 
+    LCD_Print(text3, 246, 85, 2, 0xFFFF, 0x765E);
+    LCD_Bitmap(233, 85, 16, 9, SignoCelsius);
+    
+  }
+}
+
