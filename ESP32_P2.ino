@@ -53,3 +53,16 @@ void loop()
 {
   RecibirValor();
 }
+//****************************************
+// Funciones
+//****************************************
+void EMAADC(void)
+{
+  adcRaw = analogReadMilliVolts(pinLM35);
+  adcFiltradoT = (alpha * adcRaw) + ((1.0 - alpha) * adcFiltradoT);
+  celsius = (adcFiltradoT / 10.0);
+  Serial2.println(celsius);
+  Serial.print("Temperatura: ");
+  Serial.println(celsius);
+}
+
