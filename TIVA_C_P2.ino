@@ -91,3 +91,10 @@ extern uint8_t solnubeviento[];
 String sensorT = "";
 int estadob1 = 0;
 int buzzerPin = PF_1;
+
+int SB1[] = {
+   NOTE_E4,NOTE_D4};
+   
+int DuracionS1[] = {
+  4, 4};
+
