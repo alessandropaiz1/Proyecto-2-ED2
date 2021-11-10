@@ -98,3 +98,10 @@ int SB1[] = {
 int DuracionS1[] = {
   4, 4};
 
+int SB2[] = {
+   NOTE_C4_1,NOTE_F4};
+   
+int DuracionS2[] = {
+  4, 4};
+
+
