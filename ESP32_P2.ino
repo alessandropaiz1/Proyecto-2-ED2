@@ -32,3 +32,5 @@ double alpha = 0.09;
 float celsius = 0.0;
 
 String sensorb1 = ""; // Guardar valor obtenido cuando se pulso el boton en Tiva C
+
+int estadob1 = 0;
