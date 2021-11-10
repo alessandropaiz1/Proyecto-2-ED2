@@ -158,3 +158,9 @@ void setup() {
   String Indicador = "Parcialmente nublado";
   LCD_Print(Indicador, 120, 120, 1, 0xFFFF, 0x765E);
 
+  SPI.setModule(0);
+    // Estamos Inicializando la tarjeta SD
+  if (!SD.begin(PA_3)) {
+    Serial.println("initialization failed!");
+    return;
+  }
