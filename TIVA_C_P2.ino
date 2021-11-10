@@ -105,3 +105,14 @@ int DuracionS2[] = {
   4, 4};
 
 
+//***************************************************************************************************************************************
+// Inicialización
+//***************************************************************************************************************************************
+void setup() {
+  SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ);
+  Serial.begin(115200);
+  Serial2.begin(115200);
+  GPIOPadConfigSet(GPIO_PORTB_BASE, 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7, GPIO_STRENGTH_8MA, GPIO_PIN_TYPE_STD_WPU);
+  Serial.println("Inicio");
+  LCD_Init();
+  LCD_Clear(0xFFFF);
