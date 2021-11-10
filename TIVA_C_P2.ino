@@ -17,3 +17,21 @@
 #include <SD.h>
 
 File archivo;
+
+#include <stdint.h>
+#include <stdbool.h>
+#include <TM4C123GH6PM.h>
+#include "inc/hw_ints.h"
+#include "inc/hw_memmap.h"
+#include "inc/hw_types.h"
+#include "driverlib/debug.h"
+#include "driverlib/gpio.h"
+#include "driverlib/interrupt.h"
+#include "driverlib/rom_map.h"
+#include "driverlib/rom.h"
+#include "driverlib/sysctl.h"
+#include "driverlib/timer.h"
+
+#include "bitmaps.h"
+#include "font.h"
+#include "lcd_registers.h"
