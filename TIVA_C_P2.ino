@@ -38,3 +38,10 @@ File archivo;
 #include "pitches.h"
 
 
+//****************************************
+// Defincion de Pines
+//****************************************
+
+//Botones
+#define b1   PF_4    // B1 se utiliza para solicitar dato del sensor conectado al ESP32
+#define b2   PF_0    // B2 se utiliza para guardar el dato recibido en la memoria SD
